@@ -4,7 +4,6 @@ import pyperclip as ppc
 
 # create a regex of the account 
 account = sys.argv[1]
-# account = "email"
 account_pattern = re.compile(account+r":(\w+)")
 
 
@@ -15,7 +14,7 @@ account_pattern = re.compile(account+r":(\w+)")
 # open a file with passwords
 file = open(r"text.txt", "r+")
 accounts = file.readlines()
-# print(accounts)# find a needed account
+# find a needed account
 def finding_account(account):
     try:
         password = account_pattern.search(account)
