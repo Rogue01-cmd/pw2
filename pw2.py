@@ -1,3 +1,4 @@
+# Usage: type (pw2 <account with saved password>) in windows+R dialog.
 import re
 import sys
 import pyperclip as ppc
